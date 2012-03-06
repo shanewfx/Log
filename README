@@ -1,0 +1,11 @@
+#include "Log.h"
+
+LogData(LOG_TRACE, "log information\n");
+
+int i = 100;
+LogData(LOG_TRACE, "i = %d\n", i);
+
+int j = 10;
+LogData(LOG_TRACE, "i = %d, j = %d\n", i, j);
+
+SetLogFile("c:\\log.txt"); //you can set log file path
